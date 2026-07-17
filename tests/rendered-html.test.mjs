@@ -44,7 +44,16 @@ test("renders the academic homepage", async () => {
   assert.match(html, /37th Chinese Mathematical Olympiad/);
   assert.match(html, /Applied Mathematics &amp; Statistics Elite Program/);
   assert.match(html, /Dark mode/);
-  assert.match(html, /Delphi Benchmark/);
+  assert.match(html, /Research Interests/);
+  assert.match(html, /Statistical genetics/);
+  assert.match(html, /Biomedical data science/);
+  assert.match(html, /AI for biology/);
+  assert.match(html, /Selected Course Projects/);
+  assert.match(html, /Implicit Bias under Norm-Constrained Steepest Descent/);
+  assert.match(html, /Conditional Average Treatment Effects/);
+  assert.match(html, /Bayesian Expression Recovery/);
+  assert.match(html, /Mammalian Circadian Clock/);
+  assert.doesNotMatch(html, />Delphi Benchmark</);
   assert.match(html, /src="\/profile\.png"/);
   assert.doesNotMatch(html, /Incoming PhD/i);
   assert.doesNotMatch(html, /honored to be advised/i);
@@ -72,7 +81,9 @@ test("includes accessible navigation and real contact links", async () => {
     /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,
   );
   assert.match(html, /href="mailto:2300012401@stu\.pku\.edu\.cn"/);
-  assert.match(html, /CV \(coming soon\)/);
+  assert.match(html, /href="\/Kaixu_Tang_CV\.pdf"/);
+  assert.match(html, /href="https:\/\/arxiv\.org\/abs\/2603\.22824"/);
+  assert.doesNotMatch(html, /CV \(coming soon\)/);
   assert.match(html, /Google Scholar/);
   assert.match(html, />WeChat<\/button>/);
   assert.match(

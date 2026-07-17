@@ -7,21 +7,21 @@ type Theme = "light" | "dark";
 const researchThemes = [
   {
     index: "01",
-    title: "Reliable machine learning",
+    title: "Statistical genetics",
     description:
-      "Methods and evaluation practices for dependable data-driven systems.",
+      "Genome-wide association studies, polygenic risk scores, and statistical methods for biobank-scale data.",
   },
   {
     index: "02",
-    title: "Computational modeling",
+    title: "Biomedical data science",
     description:
-      "Mathematical models that connect theory, data, and scientific questions.",
+      "Machine learning for multi-omics and electronic health records, with an emphasis on disease-risk prediction.",
   },
   {
     index: "03",
-    title: "Evaluation and benchmarking",
+    title: "AI for biology",
     description:
-      "Careful, reproducible comparisons that clarify where methods succeed.",
+      "Computational approaches to genomics, gene-expression recovery, biological systems, and scientific discovery.",
   },
 ];
 
@@ -29,7 +29,7 @@ const navigation = [
   ["About", "about"],
   ["Research", "research"],
   ["Experience", "experience"],
-  ["Selected Work", "work"],
+  ["Course Projects", "work"],
   ["Education", "education"],
   ["Honors & Awards", "awards"],
   ["Contact", "contact"],
@@ -162,13 +162,14 @@ export default function Home() {
           </div>
 
           <div className="actions" aria-label="Profile links">
-            <span
-              className="primary-action action-placeholder"
-              aria-disabled="true"
-              title="CV will be added soon"
+            <a
+              className="primary-action"
+              href="/Kaixu_Tang_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
             >
-              CV (coming soon)
-            </span>
+              CV
+            </a>
             <a
               href="https://github.com/KaixuTang"
               target="_blank"
@@ -199,10 +200,10 @@ export default function Home() {
 
         <section id="research">
           <div className="section-head">
-            <h2>Research</h2>
+            <h2>Research Interests</h2>
             <p className="section-note">
-              Themes that guide my current exploration and future doctoral
-              work.
+              Statistical and computational methods for genetics, biomedical
+              data, and AI-enabled scientific discovery.
             </p>
           </div>
 
@@ -243,35 +244,85 @@ export default function Home() {
 
         <section id="work">
           <div className="section-head">
-            <h2>Selected Work</h2>
+            <h2>Selected Course Projects</h2>
             <p className="section-note">
-              Current research and project work, with an emphasis on careful
-              evaluation.
+              A selection of projects completed through my undergraduate
+              coursework.
             </p>
           </div>
 
           <div className="work-list">
             <article className="work-item">
-              <div className="work-label">Current</div>
+              <div className="work-label">Fall 2025</div>
               <div>
-                <h3>Delphi Benchmark</h3>
+                <h3>
+                  <a
+                    href="https://arxiv.org/abs/2603.22824"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Implicit Bias under Norm-Constrained Steepest Descent
+                    (NucGD)
+                  </a>
+                </h3>
+                <p className="project-course">
+                  Deep Learning and Reinforcement Learning
+                </p>
                 <p>
-                  An ongoing effort focused on structured, reproducible model
-                  evaluation and transparent comparison.
+                  Studied implicit bias in multiclass separable classification
+                  and proposed NucGD, a nuclear-norm optimizer with an SVD-free
+                  asynchronous power-iteration update.
                 </p>
               </div>
-              <span className="tag">Project</span>
+              <span className="tag">Course Project</span>
             </article>
             <article className="work-item">
-              <div className="work-label">Ongoing</div>
+              <div className="work-label">Fall 2025</div>
               <div>
-                <h3>Research in progress</h3>
+                <h3>
+                  Estimating Conditional Average Treatment Effects with
+                  Multi-Valued Treatments
+                </h3>
+                <p className="project-course">Statistical Learning</p>
                 <p>
-                  Exploring data-driven methods for scientific questions while
-                  prioritizing rigor, interpretability, and reproducibility.
+                  Extended CATE estimation to multi-valued treatments using
+                  double machine learning, causal forests, and a spline-based
+                  meta-learner, with simulations and an application to NLSY79.
                 </p>
               </div>
-              <span className="tag">Research</span>
+              <span className="tag">Course Project</span>
+            </article>
+            <article className="work-item">
+              <div className="work-label">Spring 2025</div>
+              <div>
+                <h3>
+                  Bayesian Expression Recovery under a Poisson-Gamma Framework
+                </h3>
+                <p className="project-course">
+                  Bayesian Theory and Computation
+                </p>
+                <p>
+                  Compared non-informative, empirical-Bayes mixture, SAVER,
+                  and SAVER-X priors for expression recovery from PDAC bulk
+                  RNA-seq data with synthetic dropout.
+                </p>
+              </div>
+              <span className="tag">Course Project</span>
+            </article>
+            <article className="work-item">
+              <div className="work-label">Spring 2025</div>
+              <div>
+                <h3>Mathematical Modeling of the Mammalian Circadian Clock</h3>
+                <p className="project-course">
+                  Mathematical Modeling in the Life Sciences
+                </p>
+                <p>
+                  Reimplemented and calibrated the 16-ODE Leloup-Goldbeter
+                  circadian model to mouse liver data and assessed oscillation
+                  robustness through peak detection and sensitivity analysis.
+                </p>
+              </div>
+              <span className="tag">Course Project</span>
             </article>
           </div>
         </section>

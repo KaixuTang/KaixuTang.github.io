@@ -498,6 +498,25 @@ h3 {
   margin: 0 0 6px;
 }
 
+.work-item h3 a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--accent) 72%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.work-item h3 a:hover {
+  color: var(--navy);
+  text-decoration-color: var(--navy);
+}
+
+.work-item .project-course {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
+}
+
 .education-item {
   grid-template-columns: minmax(0, 1fr) auto;
 }
