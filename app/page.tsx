@@ -37,6 +37,7 @@ const navigation = [
 
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("light");
+  const [wechatOpen, setWechatOpen] = useState(false);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem("kaixu-theme");
@@ -44,6 +45,23 @@ export default function Home() {
     setTheme(initialTheme);
     document.documentElement.dataset.theme = initialTheme;
   }, []);
+
+  useEffect(() => {
+    if (!wechatOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") setWechatOpen(false);
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [wechatOpen]);
 
   function toggleTheme() {
     const nextTheme: Theme = theme === "light" ? "dark" : "light";
@@ -53,7 +71,8 @@ export default function Home() {
   }
 
   return (
-    <div className="site-shell">
+    <>
+      <div className="site-shell">
       <aside className="sidebar">
         <div className="sidebar-inner">
           <div className="portrait">
@@ -111,8 +130,8 @@ export default function Home() {
           <div className="intro">
             <p>
               I am an undergraduate student in the Department of Statistics,
-              School of Mathematical Sciences, Peking University, where I am
-              honored to be advised by Prof. [
+              School of Mathematical Sciences, Peking University. I have the
+              privilege of working with Prof. [
               <a
                 href="http://faculty.bicmr.pku.edu.cn/~gehao/"
                 target="_blank"
@@ -120,15 +139,22 @@ export default function Home() {
               >
                 Hao Ge
               </a>
-              ]. Since July 2025, I have been an Undergraduate Research Fellow
-              at Yale University, where I have the privilege of working with
-              Prof. [
+              ] at Peking University and Prof. [
               <a
                 href="https://zhaocenter.org/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Hongyu Zhao
+              </a>
+              ] at Yale University. Throughout my research journey, I have been
+              fortunate to learn from and collaborate with Dr. [
+              <a
+                href="https://profiles.stanford.edu/leqi-xu"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Leqi Xu
               </a>
               ]. I am currently seeking PhD opportunities for Fall 2027 in
               Statistics &amp; Biostatistics. Please feel free to reach out!
@@ -165,6 +191,9 @@ export default function Home() {
               LinkedIn
             </a>
             <a href="mailto:2300012401@stu.pku.edu.cn">Email</a>
+            <button type="button" onClick={() => setWechatOpen(true)}>
+              WeChat
+            </button>
           </div>
         </header>
 
@@ -316,6 +345,39 @@ export default function Home() {
           <a href="#about">Back to top</a>
         </footer>
       </main>
-    </div>
+      </div>
+
+      {wechatOpen && (
+        <div
+          className="wechat-backdrop"
+          role="presentation"
+          onClick={() => setWechatOpen(false)}
+        >
+          <div
+            className="wechat-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="wechat-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              className="wechat-close"
+              type="button"
+              aria-label="Close WeChat QR code"
+              onClick={() => setWechatOpen(false)}
+            >
+              ×
+            </button>
+            <p className="eyebrow">WeChat</p>
+            <h2 id="wechat-title">Scan to connect</h2>
+            <img
+              className="wechat-qr"
+              src="/wechat-qr.jpg"
+              alt="WeChat QR code for Kaixu Tang"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 }

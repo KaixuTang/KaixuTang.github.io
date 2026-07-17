@@ -286,6 +286,7 @@ main {
 }
 
 .actions a,
+.actions button,
 .actions .action-placeholder {
   display: inline-flex;
   align-items: center;
@@ -307,6 +308,15 @@ main {
   transform: translateY(-2px);
 }
 
+.actions button {
+  cursor: pointer;
+}
+
+.actions button:hover {
+  border-color: var(--navy);
+  transform: translateY(-2px);
+}
+
 .actions .action-placeholder {
   cursor: default;
   opacity: 0.74;
@@ -316,6 +326,68 @@ main {
   color: var(--paper);
   background: var(--navy);
   border-color: var(--navy);
+}
+
+.wechat-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(8, 17, 23, 0.68);
+  backdrop-filter: blur(5px);
+}
+
+.wechat-dialog {
+  position: relative;
+  width: min(430px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  padding: 29px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  text-align: center;
+}
+
+.wechat-dialog .eyebrow {
+  margin-bottom: 5px;
+}
+
+.wechat-dialog h2 {
+  color: var(--navy);
+  font-size: 23px;
+}
+
+.wechat-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.wechat-close:hover {
+  color: var(--navy);
+  background: var(--panel);
+}
+
+.wechat-qr {
+  display: block;
+  width: min(100%, 350px);
+  height: auto;
+  margin: 18px auto 0;
+  border: 1px solid var(--line);
 }
 
 section {

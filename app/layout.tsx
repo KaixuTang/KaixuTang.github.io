@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "Kaixu Tang | Academic Homepage",
   description:
     "Kaixu Tang is an undergraduate student in the Department of Statistics, School of Mathematical Sciences, Peking University, and an Undergraduate Research Fellow at Yale University.",
+  icons: {
+    icon: [{ url: "/favicon.jpg", type: "image/jpeg" }],
+    shortcut: "/favicon.jpg",
+    apple: "/favicon.jpg",
+  },
   openGraph: {
     title: "Kaixu Tang | Academic Homepage",
     description:

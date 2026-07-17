@@ -36,6 +36,8 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Peking University/);
   assert.match(html, /Hao Ge/);
   assert.match(html, /Hongyu Zhao/);
+  assert.match(html, /Leqi Xu/);
+  assert.match(html, /Throughout my research journey/);
   assert.match(html, /Please feel free to reach out!/);
   assert.match(html, /Undergraduate Research Fellow/);
   assert.match(html, /37th Chinese Mathematical Olympiad/);
@@ -44,6 +46,7 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Delphi Benchmark/);
   assert.match(html, /src="\/profile\.png"/);
   assert.doesNotMatch(html, /Incoming PhD/i);
+  assert.doesNotMatch(html, /honored to be advised/i);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
 });
 
@@ -61,10 +64,19 @@ test("includes accessible navigation and real contact links", async () => {
   assert.match(html, /href="https:\/\/zhaocenter\.org\/"/);
   assert.match(
     html,
+    /href="https:\/\/profiles\.stanford\.edu\/leqi-xu"/,
+  );
+  assert.match(
+    html,
     /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,
   );
   assert.match(html, /href="mailto:2300012401@stu\.pku\.edu\.cn"/);
   assert.match(html, /CV \(coming soon\)/);
   assert.match(html, /Google Scholar/);
+  assert.match(html, />WeChat<\/button>/);
+  assert.match(
+    html,
+    /href="https:\/\/kaixutang\.github\.io\/favicon\.jpg"/,
+  );
   assert.match(html, /aria-label="Switch to dark mode"/);
 });
