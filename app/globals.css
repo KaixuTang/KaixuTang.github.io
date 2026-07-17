@@ -104,7 +104,7 @@ a {
   object-fit: cover;
   object-position: 54% 43%;
   image-rendering: auto;
-  transform: scale(1.38);
+  transform: scale(1.25);
   transform-origin: 54% 43%;
 }
 
@@ -409,7 +409,8 @@ section {
 }
 
 #work .section-head {
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 48px;
 }
 
 #work .section-head h2 {
