@@ -44,6 +44,14 @@ export default function Home() {
     const initialTheme: Theme = savedTheme === "dark" ? "dark" : "light";
     setTheme(initialTheme);
     document.documentElement.dataset.theme = initialTheme;
+
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}${window.location.search}`,
+      );
+    }
   }, []);
 
   useEffect(() => {
@@ -70,6 +78,18 @@ export default function Home() {
     window.localStorage.setItem("kaixu-theme", nextTheme);
   }
 
+  function scrollToSection(id: string) {
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.replaceState(
+      null,
+      "",
+      `${window.location.pathname}${window.location.search}`,
+    );
+  }
+
   return (
     <>
       <div className="site-shell">
@@ -81,7 +101,7 @@ export default function Home() {
 
           <h1 className="name">Kaixu Tang</h1>
           <p className="role">
-            Undergraduate Student
+            Senior Undergraduate Student
             <br />
             Department of Statistics
             <br />
@@ -110,7 +130,14 @@ export default function Home() {
 
           <nav aria-label="Primary navigation">
             {navigation.map(([label, id]) => (
-              <a key={id} href={`#${id}`}>
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={(event) => {
+                  event.preventDefault();
+                  scrollToSection(id);
+                }}
+              >
                 {label}
               </a>
             ))}
@@ -129,9 +156,9 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <div className="intro">
             <p>
-              I am an undergraduate student in the Department of Statistics,
-              School of Mathematical Sciences, Peking University. I have the
-              privilege of working with Prof. [
+              I am a senior undergraduate student in the Department of
+              Statistics, School of Mathematical Sciences, Peking University.
+              I have the privilege of working with Prof. [
               <a
                 href="http://faculty.bicmr.pku.edu.cn/~gehao/"
                 target="_blank"
@@ -393,7 +420,15 @@ export default function Home() {
 
         <footer>
           <span>© 2026 Kaixu Tang</span>
-          <a href="#about">Back to top</a>
+          <a
+            href="#about"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection("about");
+            }}
+          >
+            Back to top
+          </a>
         </footer>
       </main>
       </div>

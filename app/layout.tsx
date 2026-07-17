@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kaixutang.github.io"),
   title: "Kaixu Tang | Academic Homepage",
   description:
-    "Kaixu Tang is an undergraduate student in the Department of Statistics, School of Mathematical Sciences, Peking University, with research interests in statistical genetics, biomedical data science, and AI for biology.",
+    "Kaixu Tang is a senior undergraduate student in the Department of Statistics, School of Mathematical Sciences, Peking University, with research interests in statistical genetics, biomedical data science, and AI for biology.",
   icons: {
     icon: [{ url: "/favicon.jpg", type: "image/jpeg" }],
     shortcut: "/favicon.jpg",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
+      "Senior statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
     type: "website",
     url: "https://kaixutang.github.io",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
+      "Senior statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
     images: ["/og.png"],
   },
 };

@@ -35,6 +35,8 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Department of Statistics/);
   assert.match(html, /School of Mathematical Sciences/);
   assert.match(html, /Peking University/);
+  assert.match(html, /Senior Undergraduate Student/);
+  assert.match(html, /I am a senior undergraduate student/);
   assert.match(html, /Hao Ge/);
   assert.match(html, /Hongyu Zhao/);
   assert.match(html, /Leqi Xu/);
