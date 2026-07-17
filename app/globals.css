@@ -409,7 +409,7 @@ section {
 }
 
 #work .section-head {
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 320px minmax(0, 1fr);
 }
 
 #work .section-head h2 {
