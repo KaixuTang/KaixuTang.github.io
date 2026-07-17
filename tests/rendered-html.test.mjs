@@ -51,6 +51,8 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Biomedical data science/);
   assert.match(html, /AI for biology/);
   assert.match(html, /Selected Course Projects/);
+  assert.match(html, /aria-label="Fall 2025"/);
+  assert.match(html, /aria-label="Spring 2025"/);
   assert.match(html, /Implicit Bias under Norm-Constrained Steepest Descent/);
   assert.match(html, /Conditional Average Treatment Effects/);
   assert.match(html, /Bayesian Expression Recovery/);

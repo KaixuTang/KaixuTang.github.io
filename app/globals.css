@@ -419,12 +419,14 @@ section {
   border-top: 1px solid var(--line);
 }
 
+#research .section-head,
 #work .section-head,
 #awards .section-head {
   grid-template-columns: max-content minmax(0, 1fr);
   column-gap: 48px;
 }
 
+#research .section-head h2,
 #work .section-head h2,
 #awards .section-head h2 {
   white-space: nowrap;
@@ -510,6 +512,7 @@ h3 {
 }
 
 .work-label {
+  display: grid;
   padding-top: 3px;
   color: var(--accent);
   font-size: 12px;
@@ -699,6 +702,7 @@ footer a {
     gap: 5px;
   }
 
+  #research .section-head,
   #work .section-head,
   #awards .section-head {
     grid-template-columns: 1fr;

@@ -280,7 +280,10 @@ export default function Home() {
 
           <div className="work-list">
             <article className="work-item">
-              <div className="work-label">Fall 2025</div>
+              <div className="work-label" aria-label="Fall 2025">
+                <span aria-hidden="true">Fall</span>
+                <span aria-hidden="true">2025</span>
+              </div>
               <div>
                 <h3>
                   <a
@@ -304,7 +307,10 @@ export default function Home() {
               <span className="tag">Course Project</span>
             </article>
             <article className="work-item">
-              <div className="work-label">Fall 2025</div>
+              <div className="work-label" aria-label="Fall 2025">
+                <span aria-hidden="true">Fall</span>
+                <span aria-hidden="true">2025</span>
+              </div>
               <div>
                 <h3>
                   <a
@@ -326,7 +332,10 @@ export default function Home() {
               <span className="tag">Course Project</span>
             </article>
             <article className="work-item">
-              <div className="work-label">Spring 2025</div>
+              <div className="work-label" aria-label="Spring 2025">
+                <span aria-hidden="true">Spring</span>
+                <span aria-hidden="true">2025</span>
+              </div>
               <div>
                 <h3>
                   <a
@@ -350,7 +359,10 @@ export default function Home() {
               <span className="tag">Course Project</span>
             </article>
             <article className="work-item">
-              <div className="work-label">Spring 2025</div>
+              <div className="work-label" aria-label="Spring 2025">
+                <span aria-hidden="true">Spring</span>
+                <span aria-hidden="true">2025</span>
+              </div>
               <div>
                 <h3>
                   <a
