@@ -23,7 +23,7 @@ if (!response.ok) {
 
 const html = await response.text();
 
-if (!html.includes("Currently seeking PhD opportunities")) {
+if (!html.includes("Fall 2027 PhD opportunities")) {
   throw new Error("Static export is missing the PhD search status");
 }
 

@@ -29,8 +29,10 @@ test("renders the academic homepage", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Kaixu Tang \| Academic Homepage<\/title>/i);
-  assert.match(html, /Currently seeking PhD opportunities/);
+  assert.match(html, /Fall 2027 PhD opportunities/);
+  assert.match(html, /Statistics &amp; Biostatistics/);
   assert.match(html, /Department of Statistics/);
+  assert.match(html, /School of Mathematical Sciences/);
   assert.match(html, /Peking University/);
   assert.match(html, /Hao Ge/);
   assert.match(html, /Hongyu Zhao/);
@@ -40,6 +42,7 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Applied Mathematics &amp; Statistics Elite Program/);
   assert.match(html, /Dark mode/);
   assert.match(html, /Delphi Benchmark/);
+  assert.match(html, /src="\/profile\.png"/);
   assert.doesNotMatch(html, /Incoming PhD/i);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
 });
@@ -50,11 +53,12 @@ test("includes accessible navigation and real contact links", async () => {
 
   assert.match(html, /aria-label="Primary navigation"/);
   assert.match(html, /href="https:\/\/github\.com\/KaixuTang"/);
-  assert.match(html, /href="https:\/\/stat\.pku\.edu\.cn\/en\/"/);
+  assert.doesNotMatch(html, /href="https:\/\/stat\.pku\.edu\.cn\/en\/"/);
   assert.match(
     html,
-    /href="https:\/\/medicine\.yale\.edu\/profile\/hongyu-zhao\/"/,
+    /href="http:\/\/faculty\.bicmr\.pku\.edu\.cn\/~gehao\/"/,
   );
+  assert.match(html, /href="https:\/\/zhaocenter\.org\/"/);
   assert.match(
     html,
     /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,

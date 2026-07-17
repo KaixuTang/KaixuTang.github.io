@@ -56,8 +56,8 @@ export default function Home() {
     <div className="site-shell">
       <aside className="sidebar">
         <div className="sidebar-inner">
-          <div className="monogram" aria-label="Kaixu Tang initials">
-            KT
+          <div className="portrait">
+            <img src="/profile.png" alt="Portrait of Kaixu Tang" />
           </div>
 
           <h1 className="name">Kaixu Tang</h1>
@@ -66,10 +66,15 @@ export default function Home() {
             <br />
             Department of Statistics
             <br />
+            School of Mathematical Sciences
+            <br />
             Peking University
           </p>
 
-          <p className="status">Currently seeking PhD opportunities</p>
+          <p className="status">
+            Seeking Fall 2027 PhD opportunities in Statistics &amp;
+            Biostatistics
+          </p>
 
           <button
             className="theme-toggle"
@@ -105,17 +110,11 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <div className="intro">
             <p>
-              I am an undergraduate student in the [
+              I am an undergraduate student in the Department of Statistics,
+              School of Mathematical Sciences, Peking University, where I am
+              honored to be advised by Prof. [
               <a
-                href="https://stat.pku.edu.cn/en/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Department of Statistics
-              </a>
-              ] at Peking University, where I am honored to be advised by Prof. [
-              <a
-                href="https://sph.pku.edu.cn/info/1644/4190.htm"
+                href="http://faculty.bicmr.pku.edu.cn/~gehao/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -125,14 +124,14 @@ export default function Home() {
               at Yale University, where I have the privilege of working with
               Prof. [
               <a
-                href="https://medicine.yale.edu/profile/hongyu-zhao/"
+                href="https://zhaocenter.org/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Hongyu Zhao
               </a>
-              ]. I am currently seeking PhD opportunities. Please feel free to
-              reach out!
+              ]. I am currently seeking PhD opportunities for Fall 2027 in
+              Statistics &amp; Biostatistics. Please feel free to reach out!
             </p>
           </div>
 
@@ -258,7 +257,9 @@ export default function Home() {
           <div className="education-item">
             <div>
               <h3>Peking University</h3>
-              <p className="profile-organization">Department of Statistics</p>
+              <p className="profile-organization">
+                Department of Statistics, School of Mathematical Sciences
+              </p>
               <p>Undergraduate student</p>
             </div>
             <span className="tag">Current</span>
@@ -299,8 +300,9 @@ export default function Home() {
               <p className="contact-kicker">Contact</p>
               <h2>Feel free to reach out.</h2>
               <p>
-                I am currently open to PhD opportunities and welcome
-                conversations about research and collaboration.
+                I am seeking Fall 2027 PhD opportunities in Statistics &amp;
+                Biostatistics and welcome conversations about research and
+                collaboration.
               </p>
             </div>
             <a href="mailto:2300012401@stu.pku.edu.cn">

@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kaixutang.github.io"),
   title: "Kaixu Tang | Academic Homepage",
   description:
-    "Kaixu Tang is an undergraduate student in the Department of Statistics at Peking University and an Undergraduate Research Fellow at Yale University.",
+    "Kaixu Tang is an undergraduate student in the Department of Statistics, School of Mathematical Sciences, Peking University, and an Undergraduate Research Fellow at Yale University.",
   openGraph: {
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University and research fellow at Yale University, currently seeking PhD opportunities.",
+      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking Fall 2027 PhD opportunities in Statistics and Biostatistics.",
     type: "website",
     url: "https://kaixutang.github.io",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University and research fellow at Yale University, currently seeking PhD opportunities.",
+      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking Fall 2027 PhD opportunities in Statistics and Biostatistics.",
     images: ["/og.png"],
   },
 };
