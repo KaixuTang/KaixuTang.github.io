@@ -28,8 +28,10 @@ const researchThemes = [
 const navigation = [
   ["About", "about"],
   ["Research", "research"],
+  ["Experience", "experience"],
   ["Selected Work", "work"],
   ["Education", "education"],
+  ["Honors & Awards", "awards"],
   ["Contact", "contact"],
 ];
 
@@ -60,9 +62,11 @@ export default function Home() {
 
           <h1 className="name">Kaixu Tang</h1>
           <p className="role">
-            Undergraduate Researcher
+            Undergraduate Student
             <br />
-            at Peking University
+            Department of Statistics
+            <br />
+            Peking University
           </p>
 
           <p className="status">Currently seeking PhD opportunities</p>
@@ -99,25 +103,51 @@ export default function Home() {
       <main>
         <header id="about" className="hero">
           <p className="eyebrow">About</p>
-          <p className="intro">
-            I am interested in <em>rigorous, interdisciplinary research</em> at
-            the intersection of machine learning, mathematical modeling, and
-            data-driven science.
-          </p>
+          <div className="intro">
+            <p>
+              I am an undergraduate student in the Department of Statistics at
+              Peking University, where I am honored to be advised by{" "}
+              <strong>Prof. Hao Ge</strong>.
+            </p>
+            <p>
+              Since July 2025, I have been an Undergraduate Research Fellow at
+              Yale University, where I am fortunate to work with{" "}
+              <strong>Prof. Hongyu Zhao</strong>.
+            </p>
+            <p>
+              I am currently open to PhD opportunities. Feel free to reach out
+              if you would like to discuss research or potential opportunities.
+            </p>
+          </div>
 
           <div className="actions" aria-label="Profile links">
-            <a
-              className="primary-action"
-              href="mailto:2300012401@stu.pku.edu.cn?subject=CV%20request"
+            <span
+              className="primary-action action-placeholder"
+              aria-disabled="true"
+              title="CV will be added soon"
             >
-              Request CV
-            </a>
+              CV (coming soon)
+            </span>
             <a
               href="https://github.com/KaixuTang"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
+            </a>
+            <span
+              className="action-placeholder"
+              aria-disabled="true"
+              title="Google Scholar profile will be added soon"
+            >
+              Google Scholar
+            </span>
+            <a
+              href="https://www.linkedin.com/in/kaixu-tang-a90409374/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
             <a href="mailto:2300012401@stu.pku.edu.cn">Email</a>
           </div>
@@ -140,6 +170,30 @@ export default function Home() {
                 <p>{item.description}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section id="experience">
+          <div className="section-head">
+            <h2>Experience</h2>
+            <p className="section-note">
+              Research experience across statistical and biomedical data
+              science.
+            </p>
+          </div>
+
+          <div className="profile-list">
+            <article className="profile-item">
+              <div>
+                <p className="profile-period">July 2025 — Present</p>
+                <h3>Undergraduate Research Fellow</h3>
+                <p className="profile-organization">Yale University</p>
+                <p>
+                  Research internship under the guidance of Prof. Hongyu Zhao.
+                </p>
+              </div>
+              <span className="tag">Research Internship</span>
+            </article>
           </div>
         </section>
 
@@ -188,9 +242,38 @@ export default function Home() {
           <div className="education-item">
             <div>
               <h3>Peking University</h3>
-              <p>Undergraduate studies</p>
+              <p className="profile-organization">Department of Statistics</p>
+              <p>Undergraduate student</p>
             </div>
             <span className="tag">Current</span>
+          </div>
+        </section>
+
+        <section id="awards">
+          <div className="section-head">
+            <h2>Honors &amp; Awards</h2>
+            <p className="section-note">
+              Selected academic distinctions and honors.
+            </p>
+          </div>
+
+          <div className="profile-list">
+            <article className="profile-item">
+              <div>
+                <h3>Silver Medal</h3>
+                <p className="profile-organization">
+                  37th Chinese Mathematical Olympiad
+                </p>
+              </div>
+              <span className="tag">National Honor</span>
+            </article>
+            <article className="profile-item">
+              <div>
+                <h3>Applied Mathematics &amp; Statistics Elite Program</h3>
+                <p className="profile-organization">Peking University</p>
+              </div>
+              <span className="tag">Elite Program</span>
+            </article>
           </div>
         </section>
 
@@ -198,10 +281,10 @@ export default function Home() {
           <div className="contact-card">
             <div>
               <p className="contact-kicker">Contact</p>
-              <h2>Let&apos;s discuss research.</h2>
+              <h2>Feel free to reach out.</h2>
               <p>
-                I welcome conversations about doctoral opportunities and
-                collaboration.
+                I am currently open to PhD opportunities and welcome
+                conversations about research and collaboration.
               </p>
             </div>
             <a href="mailto:2300012401@stu.pku.edu.cn">

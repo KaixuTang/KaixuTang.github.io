@@ -30,8 +30,13 @@ test("renders the academic homepage", async () => {
   const html = await response.text();
   assert.match(html, /<title>Kaixu Tang \| Academic Homepage<\/title>/i);
   assert.match(html, /Currently seeking PhD opportunities/);
-  assert.match(html, /Undergraduate Researcher/);
+  assert.match(html, /Department of Statistics/);
   assert.match(html, /Peking University/);
+  assert.match(html, /Prof\. Hao Ge/);
+  assert.match(html, /Prof\. Hongyu Zhao/);
+  assert.match(html, /Undergraduate Research Fellow/);
+  assert.match(html, /37th Chinese Mathematical Olympiad/);
+  assert.match(html, /Applied Mathematics &amp; Statistics Elite Program/);
   assert.match(html, /Dark mode/);
   assert.match(html, /Delphi Benchmark/);
   assert.doesNotMatch(html, /Incoming PhD/i);
@@ -44,6 +49,12 @@ test("includes accessible navigation and real contact links", async () => {
 
   assert.match(html, /aria-label="Primary navigation"/);
   assert.match(html, /href="https:\/\/github\.com\/KaixuTang"/);
+  assert.match(
+    html,
+    /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,
+  );
   assert.match(html, /href="mailto:2300012401@stu\.pku\.edu\.cn"/);
+  assert.match(html, /CV \(coming soon\)/);
+  assert.match(html, /Google Scholar/);
   assert.match(html, /aria-label="Switch to dark mode"/);
 });
