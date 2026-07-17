@@ -252,27 +252,27 @@ main {
 }
 
 .intro {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(18px, 1.55vw, 21px);
-  line-height: 1.72;
-  letter-spacing: -0.008em;
+  font-size: 16px;
+  line-height: 1.78;
 }
 
 .intro p {
   margin: 0;
 }
 
-.intro p + p {
-  margin-top: 12px;
+.intro a {
+  color: var(--navy);
+  font-weight: 650;
+  text-decoration-color: color-mix(in srgb, var(--accent) 72%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
-.intro strong {
-  color: var(--navy);
-  font-weight: 600;
-  box-shadow: inset 0 -0.17em color-mix(in srgb, var(--accent) 21%, transparent);
+.intro a:hover {
+  text-decoration-color: var(--navy);
 }
 
 .actions {

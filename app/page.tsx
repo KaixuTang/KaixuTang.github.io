@@ -105,18 +105,34 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <div className="intro">
             <p>
-              I am an undergraduate student in the Department of Statistics at
-              Peking University, where I am honored to be advised by{" "}
-              <strong>Prof. Hao Ge</strong>.
-            </p>
-            <p>
-              Since July 2025, I have been an Undergraduate Research Fellow at
-              Yale University, where I am fortunate to work with{" "}
-              <strong>Prof. Hongyu Zhao</strong>.
-            </p>
-            <p>
-              I am currently open to PhD opportunities. Feel free to reach out
-              if you would like to discuss research or potential opportunities.
+              I am an undergraduate student in the [
+              <a
+                href="https://stat.pku.edu.cn/en/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Department of Statistics
+              </a>
+              ] at Peking University, where I am honored to be advised by Prof. [
+              <a
+                href="https://sph.pku.edu.cn/info/1644/4190.htm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Hao Ge
+              </a>
+              ]. Since July 2025, I have been an Undergraduate Research Fellow
+              at Yale University, where I have the privilege of working with
+              Prof. [
+              <a
+                href="https://medicine.yale.edu/profile/hongyu-zhao/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Hongyu Zhao
+              </a>
+              ]. I am currently seeking PhD opportunities. Please feel free to
+              reach out!
             </p>
           </div>
 

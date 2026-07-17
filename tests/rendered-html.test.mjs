@@ -32,8 +32,9 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Currently seeking PhD opportunities/);
   assert.match(html, /Department of Statistics/);
   assert.match(html, /Peking University/);
-  assert.match(html, /Prof\. Hao Ge/);
-  assert.match(html, /Prof\. Hongyu Zhao/);
+  assert.match(html, /Hao Ge/);
+  assert.match(html, /Hongyu Zhao/);
+  assert.match(html, /Please feel free to reach out!/);
   assert.match(html, /Undergraduate Research Fellow/);
   assert.match(html, /37th Chinese Mathematical Olympiad/);
   assert.match(html, /Applied Mathematics &amp; Statistics Elite Program/);
@@ -49,6 +50,11 @@ test("includes accessible navigation and real contact links", async () => {
 
   assert.match(html, /aria-label="Primary navigation"/);
   assert.match(html, /href="https:\/\/github\.com\/KaixuTang"/);
+  assert.match(html, /href="https:\/\/stat\.pku\.edu\.cn\/en\/"/);
+  assert.match(
+    html,
+    /href="https:\/\/medicine\.yale\.edu\/profile\/hongyu-zhao\/"/,
+  );
   assert.match(
     html,
     /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,
