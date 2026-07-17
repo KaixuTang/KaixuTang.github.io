@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking Fall 2027 PhD opportunities in Statistics and Biostatistics.",
+      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
     type: "website",
     url: "https://kaixutang.github.io",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kaixu Tang | Academic Homepage",
     description:
-      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking Fall 2027 PhD opportunities in Statistics and Biostatistics.",
+      "Statistics undergraduate at Peking University and research fellow at Yale University, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
     images: ["/og.png"],
   },
 };

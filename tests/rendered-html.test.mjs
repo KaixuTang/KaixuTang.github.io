@@ -29,7 +29,8 @@ test("renders the academic homepage", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Kaixu Tang \| Academic Homepage<\/title>/i);
-  assert.match(html, /Fall 2027 PhD opportunities/);
+  assert.match(html, /2027 Fall PhD opportunities/);
+  assert.doesNotMatch(html, /Fall 2027/);
   assert.match(html, /Statistics &amp; Biostatistics/);
   assert.match(html, /Department of Statistics/);
   assert.match(html, /School of Mathematical Sciences/);

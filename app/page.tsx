@@ -91,7 +91,7 @@ export default function Home() {
           </p>
 
           <p className="status">
-            Seeking Fall 2027 PhD opportunities in Statistics &amp;
+            Seeking 2027 Fall PhD opportunities in Statistics &amp;
             Biostatistics
           </p>
 
@@ -156,7 +156,7 @@ export default function Home() {
               >
                 Leqi Xu
               </a>
-              ]. I am currently seeking PhD opportunities for Fall 2027 in
+              ]. I am currently seeking 2027 Fall PhD opportunities in
               Statistics &amp; Biostatistics. Please feel free to reach out!
             </p>
           </div>
@@ -329,7 +329,7 @@ export default function Home() {
               <p className="contact-kicker">Contact</p>
               <h2>Feel free to reach out.</h2>
               <p>
-                I am seeking Fall 2027 PhD opportunities in Statistics &amp;
+                I am seeking 2027 Fall PhD opportunities in Statistics &amp;
                 Biostatistics and welcome conversations about research and
                 collaboration.
               </p>
