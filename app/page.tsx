@@ -307,8 +307,14 @@ export default function Home() {
               <div className="work-label">Fall 2025</div>
               <div>
                 <h3>
-                  Estimating Conditional Average Treatment Effects with
-                  Multi-Valued Treatments
+                  <a
+                    href="/course-projects/CATE_Multi_Valued_Treatments.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Estimating Conditional Average Treatment Effects with
+                    Multi-Valued Treatments
+                  </a>
                 </h3>
                 <p className="project-course">Statistical Learning</p>
                 <p>
@@ -323,7 +329,14 @@ export default function Home() {
               <div className="work-label">Spring 2025</div>
               <div>
                 <h3>
-                  Bayesian Expression Recovery under a Poisson-Gamma Framework
+                  <a
+                    href="/course-projects/Bayesian_Expression_Recovery.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Bayesian Expression Recovery under a Poisson-Gamma
+                    Framework
+                  </a>
                 </h3>
                 <p className="project-course">
                   Bayesian Theory and Computation
@@ -339,7 +352,15 @@ export default function Home() {
             <article className="work-item">
               <div className="work-label">Spring 2025</div>
               <div>
-                <h3>Mathematical Modeling of the Mammalian Circadian Clock</h3>
+                <h3>
+                  <a
+                    href="/course-projects/Mammalian_Circadian_Clock.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Mathematical Modeling of the Mammalian Circadian Clock
+                  </a>
+                </h3>
                 <p className="project-course">
                   Mathematical Modeling in the Life Sciences
                 </p>

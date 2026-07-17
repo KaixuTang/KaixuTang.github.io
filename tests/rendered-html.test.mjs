@@ -85,6 +85,18 @@ test("includes accessible navigation and real contact links", async () => {
   assert.match(html, /href="mailto:2300012401@stu\.pku\.edu\.cn"/);
   assert.match(html, /href="\/Kaixu_Tang_CV\.pdf"/);
   assert.match(html, /href="https:\/\/arxiv\.org\/abs\/2603\.22824"/);
+  assert.match(
+    html,
+    /href="\/course-projects\/CATE_Multi_Valued_Treatments\.pdf"/,
+  );
+  assert.match(
+    html,
+    /href="\/course-projects\/Bayesian_Expression_Recovery\.pdf"/,
+  );
+  assert.match(
+    html,
+    /href="\/course-projects\/Mammalian_Circadian_Clock\.pdf"/,
+  );
   assert.doesNotMatch(html, /CV \(coming soon\)/);
   assert.match(html, /Google Scholar/);
   assert.match(html, />WeChat<\/button>/);
