@@ -159,18 +159,18 @@ export default function Home() {
             <p>
               I am a senior undergraduate studying statistics in the School of
               Mathematical Sciences at Peking University, where my advisors are
-              Professors <a href="https://moleibobliu.github.io/" target="_blank" rel="noreferrer">Molei Liu</a> and <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a>.
+              Professors <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> and <a href="https://moleibobliu.github.io/" target="_blank" rel="noreferrer">Molei Liu</a>.
               Since 2025, I have had the privilege of working with
               Prof. <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> at Yale University.
               I am also fortunate to have Dr. <a href="https://leqixu.github.io/" target="_blank" rel="noreferrer">Leqi Xu</a> as my mentor.
               I am currently seeking PhD opportunities in statistics and biostatistics for Fall 2027.
             </p>
             <p>
-              I am interested in using statistics and machine learning to understand
-              why patients with similar clinical histories can face different risks
-              of disease. I want to connect genetic and single-cell data with
-              longitudinal health records to study the biology behind those
-              differences and improve risk prediction across populations.
+              I am interested in using statistical and AI methods to understand
+              how biological processes interact to shape the onset and progression
+              of disease. By integrating multi-omics and genetic data with
+              longitudinal electronic health records, I hope to clarify these
+              mechanisms and improve risk prediction across populations.
             </p>
           </div>
 
