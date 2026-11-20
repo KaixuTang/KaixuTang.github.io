@@ -280,19 +280,6 @@ main {
   margin: 0;
 }
 
-.intro p + p {
-  margin-top: 0.75em;
-}
-
-.research-details {
-  margin: 0.75rem 0 0;
-  padding-left: 1.25rem;
-}
-
-.research-details li + li {
-  margin-top: 0.5rem;
-}
-
 .intro a {
   color: var(--navy);
   font-weight: 650;

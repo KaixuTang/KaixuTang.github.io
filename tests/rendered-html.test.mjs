@@ -36,7 +36,7 @@ test("renders the academic homepage", async () => {
   assert.match(html, /School of Mathematical Sciences/);
   assert.match(html, /Peking University/);
   assert.match(html, /Senior Undergraduate Student/);
-  assert.match(html, /I am a senior undergraduate student/);
+  assert.match(html, /I am a senior studying statistics/);
   assert.match(html, /Hao Ge/);
   assert.match(html, /Hongyu Zhao/);
   assert.match(html, /Leqi Xu/);
@@ -49,7 +49,7 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Dark mode/);
   assert.match(html, /Research Interests/);
   assert.match(html, /Statistical genetics/);
-  assert.match(html, /JointMTPRS/);
+  assert.match(html, /Transfer learning for multi-omics prediction/);
   assert.match(html, /AI for biology/);
   assert.match(html, /Selected Course Projects/);
   assert.match(html, /aria-label="Fall 2025"/);

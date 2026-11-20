@@ -157,17 +157,12 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <div className="intro">
             <p>
-              I am a senior undergraduate student in the Department of
-              Statistics, School of Mathematical Sciences, Peking University.
-              At Yale, I work with Prof. <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> on
-              disease-risk prediction from electronic health records and genetic data.
-              At Peking University, I work with Prof. Molei Liu on predicting molecular
-              measurements from clinical records across populations.
-            </p>
-            <p>
-              I previously worked with Prof. <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> on
-              multi-omics and Hi-C data. I have also collaborated with Dr. <a href="https://profiles.stanford.edu/leqi-xu" target="_blank" rel="noreferrer">Leqi Xu</a>.
-              I am seeking 2027 Fall PhD opportunities in Statistics &amp; Biostatistics.
+              I am a senior studying statistics at Peking University. My research
+              interests include statistical genetics, longitudinal health records,
+              and transfer learning across populations. I work with Prof. Molei Liu
+              at Peking University and Prof. <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> at Yale.
+              I have also been fortunate to work with Prof. <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> and
+              Dr. <a href="https://profiles.stanford.edu/leqi-xu" target="_blank" rel="noreferrer">Leqi Xu</a>.
             </p>
           </div>
 
@@ -257,31 +252,23 @@ export default function Home() {
                 <p className="profile-period">July 2025 — present</p>
                 <h3>Yale School of Public Health</h3>
                 <p className="profile-organization">Undergraduate Research Intern in Biostatistics · Prof. Hongyu Zhao</p>
-                <ul className="research-details">
-                  <li><strong>Longitudinal EHR prediction.</strong> I led a UK Biobank benchmark of one- and five-year disease risk. Logistic regression outperformed Delphi-2M at both horizons. Training Transformers directly on those outcome windows improved on both models.</li>
-                  <li><strong>JointMTPRS.</strong> I ran simulations and analyses across 41 traits for a model that combines polygenic scores from pairs of traits. JointMTPRS improved on PRS-CS by 15.1% on average.</li>
-                  <li><strong>Disease trajectories.</strong> I developed an EHR encoder that maps each patient’s history to a mixture of age-varying disease topics. It recovered biologically meaningful groups and achieved higher prediction AUC than Delphi-2M and logistic regression.</li>
-                  <li><strong>Statistical genetics.</strong> With Prof. Jiming Jiang (UC Davis), I evaluated MoCM for binomial mixed models. I built a GWAS pipeline and compared its estimates and computational cost with PQLseq.</li>
-                </ul>
+                <p>Statistical genetics and longitudinal health records</p>
               </div>
             </article>
             <article className="profile-item">
               <div>
                 <p className="profile-period">September 2026 — present</p>
-                <h3>Peking University · Cross-domain omics prediction</h3>
+                <h3>Peking University</h3>
                 <p className="profile-organization">Undergraduate Researcher · Prof. Molei Liu</p>
-                <p>I study how a cohort with paired clinical records and omics can inform predictions for patients with clinical records alone. I am developing a model of the physiology shared across populations and have run preliminary cross-ancestry experiments using Olink proteomics.</p>
+                <p>Transfer learning for multi-omics prediction</p>
               </div>
             </article>
             <article className="profile-item">
               <div>
                 <p className="profile-period">October 2024 — May 2026</p>
-                <h3>Peking University · Multi-omics and Hi-C</h3>
+                <h3>Peking University</h3>
                 <p className="profile-organization">Undergraduate Researcher · Prof. Hao Ge</p>
-                <ul className="research-details">
-                  <li>Built classifiers to distinguish pancreatic ductal adenocarcinoma from pancreatitis and studied how to handle molecular measurements missing across hospitals.</li>
-                  <li>Adapted tree-counting tests for correlated graphs to compare Hi-C contact maps. A sliding-window version localized simulated differences in pseudo-bulk maps with ROC AUC of about 0.90.</li>
-                </ul>
+                <p>Multi-omics and Hi-C data analysis</p>
               </div>
             </article>
           </div>
