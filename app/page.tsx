@@ -239,7 +239,7 @@ export default function Home() {
           <div className="profile-list">
             <article className="profile-item">
               <div>
-                <h3>Delphi-2M trails logistic regression in fixed-horizon disease risk prediction: the cost of optimizing for the next event</h3>
+                <h3>Prediction targets and evaluation designs shape disease risk prediction from electronic health records</h3>
                 <p><strong>K. Tang*</strong>, F. Wen*, L. Xu, H. Shao, E. N. Penichet, N. Sun, H. Zhao†</p>
               </div>
             </article>
