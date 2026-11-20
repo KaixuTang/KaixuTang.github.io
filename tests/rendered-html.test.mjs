@@ -78,10 +78,8 @@ test("includes accessible navigation and real contact links", async () => {
     /href="http:\/\/faculty\.bicmr\.pku\.edu\.cn\/~gehao\/"/,
   );
   assert.match(html, /href="https:\/\/zhaocenter\.org\/"/);
-  assert.match(
-    html,
-    /href="https:\/\/profiles\.stanford\.edu\/leqi-xu"/,
-  );
+  assert.match(html, /href="https:\/\/moleibobliu\.github\.io\/"/);
+  assert.match(html, /href="https:\/\/leqixu\.github\.io\/"/);
   assert.match(
     html,
     /href="https:\/\/www\.linkedin\.com\/in\/kaixu-tang-a90409374\/"/,

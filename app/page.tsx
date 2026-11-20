@@ -160,9 +160,9 @@ export default function Home() {
               I am a senior studying statistics at Peking University. My research
               interests include statistical genetics, longitudinal health records,
               and transfer learning across populations. My research advisors include
-              Professors Molei Liu and <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> at
+              Professors <a href="https://moleibobliu.github.io/" target="_blank" rel="noreferrer">Molei Liu</a> and <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> at
               Peking University and Professor <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> at Yale.
-              I am fortunate to have Dr. <a href="https://profiles.stanford.edu/leqi-xu" target="_blank" rel="noreferrer">Leqi Xu</a> as my mentor.
+              I am fortunate to have Dr. <a href="https://leqixu.github.io/" target="_blank" rel="noreferrer">Leqi Xu</a> as my mentor.
               I am currently seeking PhD opportunities in statistics and biostatistics for Fall 2027.
             </p>
           </div>
