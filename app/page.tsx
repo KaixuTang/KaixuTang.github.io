@@ -157,13 +157,20 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <div className="intro">
             <p>
-              I am a senior studying statistics at Peking University. My research
-              interests include statistical genetics, longitudinal health records,
-              and transfer learning across populations. My research advisors include
-              Professors <a href="https://moleibobliu.github.io/" target="_blank" rel="noreferrer">Molei Liu</a> and <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> at
-              Peking University and Professor <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> at Yale.
-              I am fortunate to have Dr. <a href="https://leqixu.github.io/" target="_blank" rel="noreferrer">Leqi Xu</a> as my mentor.
+              I am a senior undergraduate studying statistics in the School of
+              Mathematical Sciences at Peking University, where my advisors are
+              Professors <a href="https://moleibobliu.github.io/" target="_blank" rel="noreferrer">Molei Liu</a> and <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a>.
+              Since 2025, I have had the privilege of working with
+              Prof. <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> at Yale University.
+              I am also fortunate to have Dr. <a href="https://leqixu.github.io/" target="_blank" rel="noreferrer">Leqi Xu</a> as my mentor.
               I am currently seeking PhD opportunities in statistics and biostatistics for Fall 2027.
+            </p>
+            <p>
+              I am interested in using statistics and machine learning to understand
+              why patients with similar clinical histories can face different risks
+              of disease. I want to connect genetic and single-cell data with
+              longitudinal health records to study the biology behind those
+              differences and improve risk prediction across populations.
             </p>
           </div>
 
