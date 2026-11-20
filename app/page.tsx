@@ -13,21 +13,22 @@ const researchThemes = [
   },
   {
     index: "02",
-    title: "Biomedical data science",
+    title: "Longitudinal EHRs",
     description:
-      "Machine learning for multi-omics and electronic health records, with an emphasis on disease-risk prediction.",
+      "How training objectives shape disease-risk prediction, and what patterns emerge from a patient’s disease history.",
   },
   {
     index: "03",
-    title: "AI for biology",
+    title: "Multi-omics and transfer learning",
     description:
-      "Computational approaches to genomics, gene-expression recovery, biological systems, and scientific discovery.",
+      "Predicting molecular measurements from routine clinical records across populations, and exploring generative AI for biology.",
   },
 ];
 
 const navigation = [
   ["About", "about"],
   ["Research", "research"],
+  ["Manuscripts", "manuscripts"],
   ["Experience", "experience"],
   ["Course Projects", "work"],
   ["Education", "education"],
@@ -146,7 +147,7 @@ export default function Home() {
           <p className="sidebar-footer">
             Academic profile
             <br />
-            Updated July 2026
+            Updated November 2026
           </p>
         </div>
       </aside>
@@ -158,33 +159,15 @@ export default function Home() {
             <p>
               I am a senior undergraduate student in the Department of
               Statistics, School of Mathematical Sciences, Peking University.
-              I have the privilege of working with Prof. [
-              <a
-                href="http://faculty.bicmr.pku.edu.cn/~gehao/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hao Ge
-              </a>
-              ] at Peking University and Prof. [
-              <a
-                href="https://zhaocenter.org/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Hongyu Zhao
-              </a>
-              ] at Yale University. Throughout my research journey, I have been
-              fortunate to learn from and collaborate with Dr. [
-              <a
-                href="https://profiles.stanford.edu/leqi-xu"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Leqi Xu
-              </a>
-              ]. I am currently seeking 2027 Fall PhD opportunities in
-              Statistics &amp; Biostatistics. Please feel free to reach out!
+              At Yale, I work with Prof. <a href="https://zhaocenter.org/" target="_blank" rel="noreferrer">Hongyu Zhao</a> on
+              disease-risk prediction from electronic health records and genetic data.
+              At Peking University, I work with Prof. Molei Liu on predicting molecular
+              measurements from clinical records across populations.
+            </p>
+            <p>
+              I previously worked with Prof. <a href="http://faculty.bicmr.pku.edu.cn/~gehao/" target="_blank" rel="noreferrer">Hao Ge</a> on
+              multi-omics and Hi-C data. I have also collaborated with Dr. <a href="https://profiles.stanford.edu/leqi-xu" target="_blank" rel="noreferrer">Leqi Xu</a>.
+              I am seeking 2027 Fall PhD opportunities in Statistics &amp; Biostatistics.
             </p>
           </div>
 
@@ -245,26 +228,61 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="experience">
+        <section id="manuscripts">
           <div className="section-head">
-            <h2>Experience</h2>
-            <p className="section-note">
-              Research experience across statistical and biomedical data
-              science.
-            </p>
+            <h2>Manuscripts</h2>
+            <p className="section-note">Both manuscripts are in preparation and available <a href="mailto:2300012401@stu.pku.edu.cn">upon request</a>. * Equal contribution. † Corresponding author.</p>
           </div>
-
           <div className="profile-list">
             <article className="profile-item">
               <div>
-                <p className="profile-period">July 2025 — Present</p>
-                <h3>Undergraduate Research Fellow</h3>
-                <p className="profile-organization">Yale University</p>
-                <p>
-                  Research internship under the guidance of Prof. Hongyu Zhao.
-                </p>
+                <h3>Delphi-2M trails logistic regression in fixed-horizon disease risk prediction: the cost of optimizing for the next event</h3>
+                <p><strong>K. Tang*</strong>, F. Wen*, L. Xu, H. Shao, E. N. Penichet, N. Sun, H. Zhao†</p>
               </div>
-              <span className="tag">Research Internship</span>
+            </article>
+            <article className="profile-item">
+              <div>
+                <h3>Pairwise joint trait modeling and cross-pair integration improve polygenic risk prediction from GWAS summary statistics</h3>
+                <p>L. Xu*, X. Zeng*, <strong>K. Tang*</strong>, G. Zhou, C. Zhang, J. Hu, L. Guan, H. Zhao†</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience">
+          <div className="section-head"><h2>Experience</h2></div>
+          <div className="profile-list">
+            <article className="profile-item">
+              <div>
+                <p className="profile-period">July 2025 — present</p>
+                <h3>Yale School of Public Health</h3>
+                <p className="profile-organization">Undergraduate Research Intern in Biostatistics · Prof. Hongyu Zhao</p>
+                <ul className="research-details">
+                  <li><strong>Longitudinal EHR prediction.</strong> I led a UK Biobank benchmark of one- and five-year disease risk. Logistic regression outperformed Delphi-2M at both horizons. Training Transformers directly on those outcome windows improved on both models.</li>
+                  <li><strong>JointMTPRS.</strong> I ran simulations and analyses across 41 traits for a model that combines polygenic scores from pairs of traits. JointMTPRS improved on PRS-CS by 15.1% on average.</li>
+                  <li><strong>Disease trajectories.</strong> I developed an EHR encoder that maps each patient’s history to a mixture of age-varying disease topics. It recovered biologically meaningful groups and achieved higher prediction AUC than Delphi-2M and logistic regression.</li>
+                  <li><strong>Statistical genetics.</strong> With Prof. Jiming Jiang (UC Davis), I evaluated MoCM for binomial mixed models. I built a GWAS pipeline and compared its estimates and computational cost with PQLseq.</li>
+                </ul>
+              </div>
+            </article>
+            <article className="profile-item">
+              <div>
+                <p className="profile-period">September 2026 — present</p>
+                <h3>Peking University · Cross-domain omics prediction</h3>
+                <p className="profile-organization">Undergraduate Researcher · Prof. Molei Liu</p>
+                <p>I study how a cohort with paired clinical records and omics can inform predictions for patients with clinical records alone. I am developing a model of the physiology shared across populations and have run preliminary cross-ancestry experiments using Olink proteomics.</p>
+              </div>
+            </article>
+            <article className="profile-item">
+              <div>
+                <p className="profile-period">October 2024 — May 2026</p>
+                <h3>Peking University · Multi-omics and Hi-C</h3>
+                <p className="profile-organization">Undergraduate Researcher · Prof. Hao Ge</p>
+                <ul className="research-details">
+                  <li>Built classifiers to distinguish pancreatic ductal adenocarcinoma from pancreatitis and studied how to handle molecular measurements missing across hospitals.</li>
+                  <li>Adapted tree-counting tests for correlated graphs to compare Hi-C contact maps. A sliding-window version localized simulated differences in pseudo-bulk maps with ROC AUC of about 0.90.</li>
+                </ul>
+              </div>
             </article>
           </div>
         </section>
@@ -291,17 +309,14 @@ export default function Home() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Implicit Bias under Norm-Constrained Steepest Descent
-                    (NucGD)
+                    Implicit Bias on Multiclass Separable Data under Norm Constraints
                   </a>
                 </h3>
                 <p className="project-course">
                   Deep Learning and Reinforcement Learning
                 </p>
                 <p>
-                  Studied implicit bias in multiclass separable classification
-                  and proposed NucGD, a nuclear-norm optimizer with an SVD-free
-                  asynchronous power-iteration update.
+                  Coauthored a preprint on NucGD, a nuclear-norm optimizer with an SVD-free update. We studied how mini-batch noise and momentum affect convergence to a max-margin solution.
                 </p>
               </div>
               <span className="tag">Course Project</span>
@@ -400,7 +415,8 @@ export default function Home() {
               <p className="profile-organization">
                 Department of Statistics, School of Mathematical Sciences
               </p>
-              <p>Undergraduate student</p>
+              <p>B.S. in Statistics · September 2023 — July 2027 (expected)</p>
+              <p>GPA: 3.86 / 4.00</p>
             </div>
             <span className="tag">Current</span>
           </div>
@@ -419,7 +435,7 @@ export default function Home() {
               <div>
                 <h3>Silver Medal</h3>
                 <p className="profile-organization">
-                  37th Chinese Mathematical Olympiad
+                  37th China Mathematical Olympiad (2021)
                 </p>
               </div>
               <span className="tag">National Honor</span>
@@ -429,7 +445,19 @@ export default function Home() {
                 <h3>Applied Mathematics &amp; Statistics Elite Program</h3>
                 <p className="profile-organization">Peking University</p>
               </div>
-              <span className="tag">Elite Program</span>
+              <span className="tag">Top 10%</span>
+            </article>
+            <article className="profile-item">
+              <div>
+                <h3>Global Advanced Overseas Study Program for Emerging Leaders</h3>
+                <p className="profile-organization">Peking University · US$9,000 award</p>
+              </div>
+            </article>
+            <article className="profile-item">
+              <div>
+                <h3>First Prize, National High School Mathematics League</h3>
+                <p className="profile-organization">Sichuan Province · 2020–2022</p>
+              </div>
             </article>
           </div>
         </section>

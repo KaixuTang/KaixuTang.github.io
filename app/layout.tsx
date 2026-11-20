@@ -12,20 +12,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Kaixu Tang | Statistics at Peking University";
+const description =
+  "Kaixu Tang studies statistics at Peking University and conducts research in biostatistics at Yale on statistical genetics and disease-risk prediction from electronic health records.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://kaixutang.github.io"),
-  title: "Kaixu Tang | Academic Homepage",
-  description:
-    "Kaixu Tang is a senior undergraduate student in the Department of Statistics, School of Mathematical Sciences, Peking University, with research interests in statistical genetics, biomedical data science, and AI for biology.",
+  title,
+  description,
+  alternates: { canonical: "/" },
   icons: {
     icon: [{ url: "/favicon.jpg", type: "image/jpeg" }],
     shortcut: "/favicon.jpg",
     apple: "/favicon.jpg",
   },
   openGraph: {
-    title: "Kaixu Tang | Academic Homepage",
-    description:
-      "Senior statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
+    title,
+    description,
     type: "website",
     url: "https://kaixutang.github.io",
     images: [
@@ -39,9 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kaixu Tang | Academic Homepage",
-    description:
-      "Senior statistics undergraduate at Peking University working in statistical genetics and biomedical data science, seeking 2027 Fall PhD opportunities in Statistics and Biostatistics.",
+    title,
+    description,
     images: ["/og.png"],
   },
 };

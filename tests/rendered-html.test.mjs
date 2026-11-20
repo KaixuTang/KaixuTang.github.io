@@ -28,7 +28,7 @@ test("renders the academic homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Kaixu Tang \| Academic Homepage<\/title>/i);
+  assert.match(html, /<title>Kaixu Tang \| Statistics at Peking University<\/title>/i);
   assert.match(html, /2027 Fall PhD opportunities/);
   assert.doesNotMatch(html, /Fall 2027/);
   assert.match(html, /Statistics &amp; Biostatistics/);
@@ -40,20 +40,21 @@ test("renders the academic homepage", async () => {
   assert.match(html, /Hao Ge/);
   assert.match(html, /Hongyu Zhao/);
   assert.match(html, /Leqi Xu/);
-  assert.match(html, /Throughout my research journey/);
-  assert.match(html, /Please feel free to reach out!/);
-  assert.match(html, /Undergraduate Research Fellow/);
-  assert.match(html, /37th Chinese Mathematical Olympiad/);
+  assert.match(html, /Molei Liu/);
+  assert.match(html, /Manuscripts/);
+  assert.match(html, /rel="canonical" href="https:\/\/kaixutang\.github\.io\/"/);
+  assert.match(html, /Undergraduate Research Intern/);
+  assert.match(html, /37th China Mathematical Olympiad/);
   assert.match(html, /Applied Mathematics &amp; Statistics Elite Program/);
   assert.match(html, /Dark mode/);
   assert.match(html, /Research Interests/);
   assert.match(html, /Statistical genetics/);
-  assert.match(html, /Biomedical data science/);
+  assert.match(html, /JointMTPRS/);
   assert.match(html, /AI for biology/);
   assert.match(html, /Selected Course Projects/);
   assert.match(html, /aria-label="Fall 2025"/);
   assert.match(html, /aria-label="Spring 2025"/);
-  assert.match(html, /Implicit Bias under Norm-Constrained Steepest Descent/);
+  assert.match(html, /Implicit Bias on Multiclass Separable Data under Norm Constraints/);
   assert.match(html, /Conditional Average Treatment Effects/);
   assert.match(html, /Bayesian Expression Recovery/);
   assert.match(html, /Mammalian Circadian Clock/);
